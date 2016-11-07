@@ -1,0 +1,135 @@
+@import 'https://fonts.googleapis.com/css?family=Fira+Sans';
+
+$dark-gray: #5F584E;
+$bright-white: #FFFFFF;
+$bright-sky-blue: #4DBCF9;
+$bubblegum-pink: #FCBBEF;
+$hot-pink: #E20984;
+$margins: 25px 15px 25px 15px;
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: $dark-gray;
+  #edit,#trash {
+      font-size: 30px;
+      color: $dark-gray;
+      margin: 10px 10px 10px 10px;
+      transition: transform .5s, color .5s;
+    }
+  #save {
+    color: $bright-white;
+    font-size: 35px;
+    margin: 10px 10px 10px 10px;
+    transition: transform .5s, color .5s;
+  }
+  #edit:hover,#trash:hover {
+    color: #2f2c27;
+    transform: scale(1.25);
+  }
+  #save:hover{
+    color: $bubblegum-pink;
+    transform: scale(1.25);
+  }
+  h1 {
+    color: $bright-sky-blue;
+    margin: $margins;
+  }
+  
+  h3 {
+    color: $hot-pink;
+    margin: $margins;
+  }
+  .well {
+    background-color: $bubblegum-pink;
+    margin: $margins;
+  }
+  
+  #new-recipe-button {
+    color: $bright-white;
+    background-color: $hot-pink;
+  }
+  .custom-background {
+    color: $bright-sky-blue;
+    background-color: $bright-white;
+    border-radius: 15px;
+    margin: $margins;
+    font-size: 15px;
+    a {
+      font-size: 25px;
+    }
+    li {
+      font-size: 20px;
+    }
+    #directions{
+      color: $hot-pink;
+    }
+    p {
+      font-size: 20px;
+      color: $hot-pink;
+    }
+    #close-recipe {
+      font-size: 25px;
+      color: $hot-pink;
+      transition: transform .5s;
+      &:hover {
+      transform: rotate(90deg);
+    }
+    } 
+  }
+
+  .fa-free-code-camp {
+        color: $bubblegum-pink;
+      }
+  .fa-caret-right {
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  
+.modal-box {
+  color: $bright-white;
+  font-size: 20px;
+  background-color: rgba(226,9,132,.6);
+  box-shadow: 7px 7px 7px $hot-pink;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 25px;
+	position: absolute;
+	top: 25px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in-out;
+	-moz-transition: opacity 400ms ease-in-out;
+	transition: opacity 400ms ease-in-out;
+  pointer-events: none;
+}
+.modal-box:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal-box > div {
+	position: relative;
+	margin: 15% auto;
+	padding: 10px 10px 13px 10px;
+	border-radius: 10px;
+}
+  .close {
+    margin: 15px 5px 15px 15px;
+    transition: transform .5s;
+  }
+.close:hover {
+	color: $bubblegum-pink;
+  transform: rotate(90deg);
+}
+
+  @media screen and (max-width: 480px) {
+    .well, .custom-background {
+        margins: 0 auto;
+        padding: 5px;
+    }
+}
+  
+}

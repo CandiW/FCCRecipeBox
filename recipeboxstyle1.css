@@ -1,0 +1,120 @@
+@import "https://fonts.googleapis.com/css?family=Fira+Sans";
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #5F584E;
+}
+body #edit, body #trash {
+  font-size: 30px;
+  color: #5F584E;
+  margin: 10px 10px 10px 10px;
+  transition: transform .5s, color .5s;
+}
+body #save {
+  color: #FFFFFF;
+  font-size: 35px;
+  margin: 10px 10px 10px 10px;
+  transition: transform .5s, color .5s;
+}
+body #edit:hover, body #trash:hover {
+  color: #2f2c27;
+  transform: scale(1.25);
+}
+body #save:hover {
+  color: #FCBBEF;
+  transform: scale(1.25);
+}
+body h1 {
+  color: #4DBCF9;
+  margin: 25px 15px 25px 15px;
+}
+body h3 {
+  color: #E20984;
+  margin: 25px 15px 25px 15px;
+}
+body .well {
+  background-color: #FCBBEF;
+  margin: 25px 15px 25px 15px;
+}
+body #new-recipe-button {
+  color: #FFFFFF;
+  background-color: #E20984;
+}
+body .custom-background {
+  color: #4DBCF9;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  margin: 25px 15px 25px 15px;
+  font-size: 15px;
+}
+body .custom-background a {
+  font-size: 25px;
+}
+body .custom-background li {
+  font-size: 20px;
+}
+body .custom-background #directions {
+  color: #E20984;
+}
+body .custom-background p {
+  font-size: 20px;
+  color: #E20984;
+}
+body .custom-background #close-recipe {
+  font-size: 25px;
+  color: #E20984;
+  transition: transform .5s;
+}
+body .custom-background #close-recipe:hover {
+  transform: rotate(90deg);
+}
+body .fa-free-code-camp {
+  color: #FCBBEF;
+}
+body .fa-caret-right {
+  font-size: 25px;
+  margin-right: 5px;
+}
+body .modal-box {
+  color: #FFFFFF;
+  font-size: 20px;
+  background-color: rgba(226, 9, 132, 0.6);
+  box-shadow: 7px 7px 7px #E20984;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 25px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in-out;
+  -moz-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+  pointer-events: none;
+}
+body .modal-box:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+body .modal-box > div {
+  position: relative;
+  margin: 15% auto;
+  padding: 10px 10px 13px 10px;
+  border-radius: 10px;
+}
+body .close {
+  margin: 15px 5px 15px 15px;
+  transition: transform .5s;
+}
+body .close:hover {
+  color: #FCBBEF;
+  transform: rotate(90deg);
+}
+@media screen and (max-width: 480px) {
+  body .well, body .custom-background {
+    margins: 0 auto;
+    padding: 5px;
+  }
+}
