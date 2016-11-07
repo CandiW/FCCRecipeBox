@@ -78,8 +78,8 @@ var Recipe = React.createClass({
             null,
             React.createElement(
               "a",
-              { id: "trash", type: "button", className: "btn pull-right", "data-toggle": "collapse", href: "#" + this.props.title.replace(/\s+/g, '') + this.state.id, "aria-expanded": "false", "aria-controls": this.props.title.replace(/\s+/g, '') + this.state.id },
-              React.createElement("i", { className: "fa fa-trash-o fa-lg", onClick: this.deleteRecipe })
+              { id: "trash", type: "button", className: "btn pull-right", "data-toggle": "collapse", href: "#" + this.props.title.replace(/\s+/g, '') + this.state.id, "aria-expanded": "false", "aria-controls": this.props.title.replace(/\s+/g, '') + this.state.id, onClick: this.deleteRecipe },
+              React.createElement("i", { className: "fa fa-trash-o fa-lg" })
             ),
             React.createElement(
               "a",
