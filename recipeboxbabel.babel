@@ -48,7 +48,7 @@ var Recipe = React.createClass({
     <p>{this.props.directions}</p>
   </div>
   <div>
-    <a id="trash" type="button" className="btn pull-right" data-toggle="collapse" href={"#" + this.props.title.replace(/\s+/g, '') + this.state.id} aria-expanded="false" aria-controls={this.props.title.replace(/\s+/g, '') + this.state.id}><i className="fa fa-trash-o fa-lg" onClick={this.deleteRecipe}></i></a>
+    <a id="trash" type="button" className="btn pull-right" data-toggle="collapse" href={"#" + this.props.title.replace(/\s+/g, '') + this.state.id} aria-expanded="false" aria-controls={this.props.title.replace(/\s+/g, '') + this.state.id}  onClick={this.deleteRecipe}><i className="fa fa-trash-o fa-lg"></i></a>
     
   <a id="edit" type="button" className="btn pull-right" href={"#" + this.state.id}><i className="fa fa-pencil fa-lg"></i></a>
   </div>
