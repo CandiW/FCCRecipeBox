@@ -117,4 +117,7 @@ body .close:hover {
     margins: 0 auto;
     padding: 5px;
   }
+  body .modal-box {
+		  position: absolute;
+	  }
 }
